@@ -3,4 +3,4 @@ Pillow==8.4.0
 spacy==3.1.4
 streamlit==1.2.0
 PyMuPDF==1.18.15
-https://huggingface.co/kormilitzin/en_core_med7_trf/resolve/main/en_core_med7_trf-any-py3-none-any.whl
+https://huggingface.co/kormilitzin/en_core_med7_lg/resolve/main/en_core_med7_lg-any-py3-none-any.whl
