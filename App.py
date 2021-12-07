@@ -6,6 +6,10 @@ import streamlit as st
 from PIL import Image
 from spacy import displacy
 
+@st.experimental_singleton
+def load_model():
+    nlp = spacy.load("en_core_med7_lg")
+    return nlp
 
 def main():
     st.title("Drugs Entity Extractor App")
@@ -38,7 +42,7 @@ def main():
                         for page in doc:
                             text += page.getText()
                             
-                    nlp = spacy.load("en_core_med7_lg")
+                    nlp = load_model()
                     doc = nlp(text)
                     
                 
