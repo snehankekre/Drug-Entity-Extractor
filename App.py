@@ -16,10 +16,10 @@ def main():
     
     
     if choice=="Home":
-        image = Image.open('/home/kayshika/.config/spyder-py3/image.jpeg')
+        image = Image.open('image-2.png')
         st.image(image)
         st.write('Drugs Entity Extractor is a web based application created with streamlit. It is used to extract the Drugs entities from any Document. And In this app, Med7 model is used to extract the drugs name from document. Med7 is a transferable clinical natural language processing model for electronic health records compatible with spaCy v3+, for clinical named-entity recognition (NER) tasks. The en_core_med7_lg model is trained on MIMIC-III free-text electronic health records and is able to recognise 7 categories:')
-        image1 = Image.open('/home/kayshika/project/Innodatatics project/Screenshot 2020-02-26 at 18.18.54.png')
+        image1 = Image.open('image-1.png')
         st.image(image1)
     elif choice=="DocumentFiles":
         st.subheader("Upload Document Files")
